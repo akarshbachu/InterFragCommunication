@@ -21,3 +21,19 @@ public class MainActivity extends AppCompatActivity implements Communicator {
 
     }
 }
+
+/*
+InterFrag communication through interface as adapter
+STEPS
+  1)create 2 fragments FragA,FragB
+  2)FragA has button
+  3)FragB has TextView
+  3)Create interface called Communicator
+    which has respond method
+  4)implement the above created interface in main activity
+  5)define ChangeText method in FragB
+  6)when button is clicked respond method is called
+  7)In respond method get the reference of fragB and setText to changed data
+
+Note  We are not using direct communication between fragments because to achieve reusability
+ */
